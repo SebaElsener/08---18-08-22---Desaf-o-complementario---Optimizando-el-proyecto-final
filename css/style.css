@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Albert Sans', sans-serif; }
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%; }
+  header nav {
+    background: #f2d600; }
+    header nav div #navbarNavDropdown {
+      justify-content: right; }
+
+#mainVentaCubiertas .tituloCatalogo {
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  padding: 0 4rem; }
+  #mainVentaCubiertas .tituloCatalogo .imgCarrito {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin-left: 2rem; }
+
+#mainVentaCubiertas .mostrarCarrito {
+  padding: 2rem;
+  background-color: #dedede; }
+  #mainVentaCubiertas .mostrarCarrito li {
+    margin: 10px auto; }
+
+#mainVentaCubiertas .pedidoDatos {
+  margin-bottom: 10px; }
+  #mainVentaCubiertas .pedidoDatos .comprador {
+    text-align: center; }
+    #mainVentaCubiertas .pedidoDatos .comprador input {
+      font-size: 1.3rem;
+      display: block;
+      min-width: 400px;
+      margin: 15px auto;
+      padding: 3px 8px;
+      border-radius: 5px;
+      border: none;
+      background-color: #fff292; }
+    #mainVentaCubiertas .pedidoDatos .comprador .btnContinuarCompra {
+      transition: all 1s; }
+      #mainVentaCubiertas .pedidoDatos .comprador .btnContinuarCompra:hover {
+        background-color: #ffbd2e; }
+    #mainVentaCubiertas .pedidoDatos .comprador .alertaCompra {
+      color: red; }
+
+#mainVentaCubiertas .grillaWrapper {
+  opacity: 0;
+  transition: opacity 1s .7s; }
+  #mainVentaCubiertas .grillaWrapper .grillaProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); }
+    #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto {
+      box-shadow: 2px 2px 8px #3c3c3c;
+      margin: 20px auto;
+      text-align: center;
+      max-width: 300px;
+      border-radius: 5px; }
+      #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .imgProducto {
+        width: 100%; }
+      #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .precioCubierta {
+        font-size: 1.5rem; }
+      #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .descripcionCubierta {
+        background-color: #e3e3e3;
+        padding: 10px 0px; }
+      #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .btnAgregarProducto {
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        width: 95px;
+        background-color: #62e860;
+        margin-bottom: 25px;
+        color: #303030;
+        transition: background-color .5s; }
+        #mainVentaCubiertas .grillaWrapper .grillaProductos .cajaProducto .btnAgregarProducto:hover {
+          background-color: #ffbd2e; }
+
+main #carousel {
+  margin-top: 71px; }

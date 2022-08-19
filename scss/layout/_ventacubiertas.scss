@@ -1,0 +1,87 @@
+#mainVentaCubiertas{
+    .tituloCatalogo{
+        display: flex;
+        justify-content: space-between;
+        min-height: 70px;
+        margin-bottom: 30px;
+        margin-top: 100px;
+        padding: 0 4rem;
+        .imgCarrito{
+            width: 50px;
+            height: 50px;
+            align-self: center;
+            margin-left: 2rem;
+        }
+    }
+    .mostrarCarrito{
+        padding: 2rem;
+        background-color: rgb(222, 222, 222);
+        li{
+            margin: 10px auto;
+        }
+    }
+    .pedidoDatos{
+        margin-bottom: 10px;
+        .comprador{
+            text-align: center;
+            input{
+            font-size: 1.3rem;
+            display: block;
+            min-width: 400px;
+            margin: 15px auto;
+            padding: 3px 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: #fff292;
+            }
+            .btnContinuarCompra{
+                transition: all 1s;
+                &:hover{
+                    background-color: rgb(255, 189, 46);
+                }
+            }
+            .alertaCompra{
+                color: red;
+            }
+        }
+    }
+    .grillaWrapper{
+        opacity: 0;
+        transition: opacity 1s .7s;
+        .grillaProductos{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+            .cajaProducto{
+                box-shadow: 2px 2px 8px rgb(60, 60, 60);
+                margin: 20px auto;
+                text-align: center;
+                max-width: 300px;
+                border-radius: 5px;
+                .imgProducto{
+                    width: 100%;
+                }
+                .precioCubierta{
+                    font-size: 1.5rem;
+                }
+                .descripcionCubierta{
+                    background-color: rgb(227, 227, 227);
+                    padding: 10px 0px;
+                }
+                .btnAgregarProducto{
+                    font-weight: 600;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 5px;
+                    width: 95px;
+                    background-color: rgb(98, 232, 96);
+                    margin-bottom: 25px;
+                    color: rgb(48, 48, 48);
+                    transition: background-color .5s;
+                    &:hover{ 
+                        background-color: rgb(255, 189, 46);
+                    }
+                }
+            }
+        }
+    }
+}
